@@ -79,7 +79,6 @@
   &.is-open {
       transform: translateY(0);
       //height: 100%;
-      overflow-y: auto;
     }
 
     //@extend %container 
@@ -127,7 +126,7 @@
 }
 
 .nav-list__mobile-menu {
-  margin-bottom: 300px;
+  //margin-bottom: 300px;
 
   @media (max-width: 767px) {
   display: inline-block;
@@ -144,32 +143,35 @@
 .soc-list__mobile-menu {
    position: relative;
   display: flex;
-  justify-content: space-between;
- 
   font-size: 18px;
   line-height: 1.22;
-  
-  
 }
+
+.mobile-menu__height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
 
 .soc-list__item {
   list-style: none;
   &:not(:last-child) {
     margin-right: 20px;
+
+    &::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  margin-left: 10px;
+
+  width: 1px;
+  height: 100%;
+  background-color: $grey-color;
+  color: $grey-color;
+ }
   }
-
-
-//   &::after {
-//   position: absolute;
-//   content: "";
-//   top: 0;
-//   right: 0;
-//   display: block;
-//   width: 1px;
-//   height: 100%;
-//   background-color: $main-color;
-//   color: $grey-color;
-//  }
  
   & a {color: $main-color;
    text-decoration: none;
