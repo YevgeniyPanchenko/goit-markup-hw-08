@@ -127,6 +127,7 @@
   border-radius: 4px;
   margin-top: 4px;
   height: 120px;
+  resize: none;
 
   &:focus-within {
   outline: none;
@@ -138,11 +139,15 @@
   display: block;
   position: relative;
 
-  padding-left: 35px;
+  padding-left: 21px;
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .modal__contract {
@@ -166,8 +171,7 @@
   left: 0;
   width: 16px;
   height: 16px;
-  margin-left: 13px;
-
+  
   fill: $white-color;
   border: 1px solid #212121;
   border-radius: 4px;
@@ -205,9 +209,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-width: 1px;
   padding: 0;
   border-radius: 50px;

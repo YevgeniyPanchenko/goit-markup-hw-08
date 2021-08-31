@@ -54,10 +54,11 @@
   }
 
   .footer-form__button {
+  border: none;
   padding: 10px 30px;
   display: flex;
   align-items: center;
-
+  
   color: $white-color;
   background-color: $main-color;
 

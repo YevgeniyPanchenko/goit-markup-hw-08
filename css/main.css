@@ -131,11 +131,18 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 60px;
   }
 }
 
-.header__border {
-  border: 1px solid #ececec;
+.header__border::after {
+  position: absolute;
+  content: "";
+  top: 100;
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+  color: #757575;
 }
 
 .menu-toggle {
@@ -209,6 +216,10 @@ img {
   .auth-nav__menu {
     display: none;
   }
+}
+
+.nav-list__menu {
+  margin-left: 90px;
 }
 
 @media screen and (min-width: 768px) {
@@ -309,12 +320,6 @@ img {
   line-height: 1.19;
   text-decoration: none;
   display: inline-block;
-}
-
-@media screen and (min-width: 768px) {
-  .main-logo {
-    margin-right: 85px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -485,8 +490,8 @@ img {
   .hero__overley {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/@/Hero-mob-x1.jpeg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/@/Hero-mob-x1.jpeg");
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: #2f303a;
     margin: auto;
     background-size: cover;
@@ -504,8 +509,6 @@ img {
   .hero__overley {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/@/Hero-tab-x1.jpeg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/@/Hero-tab-x1.jpeg");
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-color: #2f303a;
     margin: auto;
     background-size: cover;
@@ -562,6 +565,7 @@ img {
 .hero__button {
   color: #fff;
   background-color: #2196f3;
+  border: none;
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -630,6 +634,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -868,12 +873,12 @@ img {
           align-items: center;
   padding-top: 0;
   margin-top: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .footer-link {
     margin-top: 0;
-    text-align: center;
   }
 }
 
@@ -885,6 +890,7 @@ img {
             align-items: center;
     margin-left: 70px;
     padding-top: 0;
+    text-align: left;
   }
 }
 
@@ -1054,12 +1060,6 @@ img {
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
-  .main-logo {
-    margin-right: 85px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .main-logo {
     margin-right: 95px;
@@ -1148,12 +1148,12 @@ img {
           align-items: center;
   padding-top: 0;
   margin-top: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .footer-link {
     margin-top: 0;
-    text-align: center;
   }
 }
 
@@ -1165,6 +1165,7 @@ img {
             align-items: center;
     margin-left: 70px;
     padding-top: 0;
+    text-align: left;
   }
 }
 
@@ -1247,6 +1248,7 @@ img {
 }
 
 .footer-form__button {
+  border: none;
   padding: 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1448,6 +1450,7 @@ img {
   border-radius: 4px;
   margin-top: 4px;
   height: 120px;
+  resize: none;
 }
 
 .form__textarea:focus-within {
@@ -1458,11 +1461,17 @@ img {
 .form-checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 21px;
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-checkbox {
+    font-size: 14px;
+  }
 }
 
 .modal__contract {
@@ -1486,7 +1495,6 @@ img {
   left: 0;
   width: 16px;
   height: 16px;
-  margin-left: 13px;
   fill: #fff;
   border: 1px solid #212121;
   border-radius: 4px;
@@ -1529,8 +1537,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-width: 1px;
   padding: 0;
   border-radius: 50px;

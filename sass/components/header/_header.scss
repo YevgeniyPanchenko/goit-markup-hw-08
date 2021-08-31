@@ -25,14 +25,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
  }
 }
 
 
 .header__border {
-  border: 1px solid #ececec;
-}
 
+
+  &::after {
+  position: absolute;
+  content: "";
+  top: 100;
+  //margin-left: 10px;
+
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;;
+  color: $grey-color;
+ }
+}
 
 .menu-toggle {
   //min-height: 40px;
@@ -101,6 +113,10 @@
   @media (max-width: 767px) {
     display: none;
   }
+}
+
+.nav-list__menu {
+  margin-left: 90px;
 }
 
 
