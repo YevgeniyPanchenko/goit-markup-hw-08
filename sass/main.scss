@@ -1,0 +1,44 @@
+//utils
+@import "./utils/_reset";
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+//header
+@import "./components/header/header";
+//logo
+@import "./components/common/logo";
+//nav-list
+@import "./components/header/nav-list";
+//auth-nav
+@import "./components/common/auth-nav";
+
+//hero
+@import "./components/1st page/hero";
+//diignity
+@import "./components/1st page/dignity";
+//programing
+@import "./components/1st page/programing";
+//team
+@import "./components/1st page/team";
+//social-link
+@import "./components/common/social-link";
+//clients
+@import "./components/1st page/clients";
+
+//footer
+@import "./components/footer/footer";
+//logo
+@import "./components/common/logo";
+//auth-nav
+@import "./components/footer/footer-mail";
+//soc-link
+@import "./components/common/social-link";
+//form
+@import "./components/footer/form";
+//modal
+@import "./components/1st page/modal";
+
+
+
+

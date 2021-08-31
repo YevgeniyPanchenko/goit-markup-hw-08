@@ -1,0 +1,153 @@
+//container???
+
+//.hero__background {
+  // max-width: 1600px;
+  // height: auto;
+  // background-color: $dark-bg;
+  // margin: auto;
+  // background-size: contain;
+//}
+
+ 
+.hero__overley {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../../img/@/Hero-mob-x1.jpeg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  //max-width: 480px;
+  //height: auto;
+  background-color: $dark-bg;
+  margin: auto;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), 
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+   
+  
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../../img/@/Hero-mob-x2.jpeg");}
+
+  }
+
+  @media screen and (min-width: 768px) {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../../img/@/Hero-tab-x1.jpeg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  //max-width: 1199px;
+  //height: auto;
+  background-color: $dark-bg;
+  margin: auto;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), 
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+   
+  
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../../img/@/Hero-tab-x2.jpeg");}
+
+  }
+
+  @media screen and (min-width: 1200px) {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/img.studio/hero.jpeg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  //height: auto;
+  background-color: $dark-bg;
+  margin: auto;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), 
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+   
+  
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../../img/@/hero-x2.jpeg");}
+
+  }
+}  
+
+
+.hero__title {
+  max-width: 360px;
+  text-align: center;
+  margin: 0 auto;
+
+  color: $white-color;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+
+  @media screen and (min-width:1200px) {
+    max-width: 700px;
+    line-height: 1.36;
+    font-size: 44px;
+  }
+  // @extend %container;
+}
+.hero__button {
+  color: $white-color;
+  background-color: $main-color;
+
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+
+  &:hover, :focus {
+      background-color: $white-color;
+    }
+
+  @extend %link;
+
+   
+}

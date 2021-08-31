@@ -1,0 +1,31 @@
+.main-logo {
+  font-family: "Raleway", sans-serif;
+  color: $main-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  display: inline-block;
+
+    //margin-left: auto;
+    //margin-right: auto;
+  
+  @media screen and (min-width: 768px) {
+    
+   //margin-left: auto;
+    margin-right: 85px;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-right: 95px;
+    
+  }
+}
+
+.main-logo__header {
+  color: $black-color;
+}
+.main-logo__footer {
+  color: $white-color;
+}
