@@ -166,6 +166,7 @@ img {
 .menu-container.is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  overflow-y: auto;
 }
 
 .menu-container .menu-toggle {
@@ -240,10 +241,13 @@ img {
 }
 
 .soc-list__mobile-menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 18px;
   line-height: 1.22;
 }
@@ -254,16 +258,6 @@ img {
 
 .soc-list__item:not(:last-child) {
   margin-right: 20px;
-}
-
-.soc-list__item .soc-list__item::after {
-  content: "";
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  color: #757575;
 }
 
 .soc-list__item a {
