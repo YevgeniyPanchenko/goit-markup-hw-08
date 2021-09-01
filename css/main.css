@@ -322,12 +322,6 @@ img {
   display: inline-block;
 }
 
-@media screen and (min-width: 1200px) {
-  .main-logo {
-    margin-right: 95px;
-  }
-}
-
 .main-logo__header {
   color: #212121;
 }
@@ -404,11 +398,15 @@ img {
   .auth-nav__item:first-child {
     margin-left: 0;
   }
+  .auth-nav__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .auth-nav__item {
     margin-left: 50px;
+    margin-bottom: 0;
   }
   .auth-nav__item:first-child {
     margin-left: 0;
@@ -638,7 +636,7 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .dignity__features {
     text-align: left;
   }
@@ -1064,12 +1062,6 @@ img {
   line-height: 1.19;
   text-decoration: none;
   display: inline-block;
-}
-
-@media screen and (min-width: 1200px) {
-  .main-logo {
-    margin-right: 95px;
-  }
 }
 
 .main-logo__header {
